@@ -10,7 +10,49 @@
 </head>
 
 <body>
-    <p>Dummy Text</p>   <!--Add number field-->
+    <p id="p">Dummy Text</p>
+
+    Text Color Values: <br>
+    <input type="color" id="text_color" onchange="text_color()">
+    <br>
+    Border Color Values: <br>
+    <input type="color" id="border_color" onchange="border_color()">
+    <br>
+    Border Width: <br>
+    <input type="number" id="border_width" onchange="border_width()">
+
+<style>
+    input {
+        width: 10ch;
+    }
+
+    p {
+        width: 11ch;
+        border-radius: 5px;
+        padding: 20px;
+        border: solid;
+        border-width: 2px;
+    }
+</style>
+
+<script>
+
+    function text_color() {
+        var text_color = document.getElementById('text_color').value;
+        document.getElementById('p').style.color = text_color;
+    }
+
+    function border_color() {
+        var border_color = document.getElementById('border_color').value;
+        document.getElementById('p').style.borderColor = border_color;
+    }
+
+    function border_width() {
+        var width = document.getElementById('border_width').value;
+        document.getElementById('p').style.borderWidth = width + "px";
+    }
+</script>
+
 </body>
 
 </html>
