@@ -9,3 +9,14 @@ ul {
 dd {
     color: red;
 }
+
+input {
+    width: 10ch;
+}
+
+p {
+    border-radius: 5px;
+    padding: 10px;
+    border: solid;
+    border-width: 0px;
+}

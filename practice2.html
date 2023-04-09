@@ -21,22 +21,8 @@
     Border Width: <br>
     <input type="number" id="border_width" onchange="border_width()">
 
-<style>
-    input {
-        width: 10ch;
-    }
-
-    p {
-        width: 11ch;
-        border-radius: 5px;
-        padding: 20px;
-        border: solid;
-        border-width: 2px;
-    }
-</style>
-
 <script>
-
+    document.getElementById('p').style.width = document.getElementById('p').innerHTML.length+1 + "ch";
     function text_color() {
         var text_color = document.getElementById('text_color').value;
         document.getElementById('p').style.color = text_color;
