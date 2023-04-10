@@ -20,3 +20,9 @@ p {
     border: solid;
     border-width: 0px;
 }
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    column-width: 20px;
+}
